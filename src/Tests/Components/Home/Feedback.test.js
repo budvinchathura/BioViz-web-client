@@ -45,8 +45,8 @@ describe('Testing the Steps component', () => {
         const heading = wrapper.find('div p');
         expect(heading.text())
             .toBe(
-                `We are happy to have your valuable  feedback
-                 to improve our website better.`,
+                // eslint-disable-next-line max-len
+                `We are happy to have your valuable  feedback to improve our website better.`,
             );
     });
 
