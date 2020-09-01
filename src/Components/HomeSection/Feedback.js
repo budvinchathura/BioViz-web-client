@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 
 const details = {
     title: 'Thank you!',
-    description: 'This help us to imorove our website better in the future.',
+    description: 'This helps us to improve our website better in the future.',
 };
 
 /**
@@ -68,7 +68,7 @@ export default function Feedback() {
         console.log(generalComment);
     };
 
-    const onSubmitFeedback = ()=>{
+    const onSubmitFeedback = () => {
         submitFeedback(ratingValues, generalComment);
     };
 
@@ -78,23 +78,23 @@ export default function Feedback() {
     }
 
     const rows = [
-        createData('Atraction of website',
+        createData('Attraction of website',
             <Rating
                 currentValue={ratingValues[0]}
                 onChange={setSingleRatingValue(0)} />),
-        createData('Satistification of fuctionalities',
+        createData('satisfaction of the functionalities',
             <Rating
                 currentValue={ratingValues[1]}
                 onChange={setSingleRatingValue(1)} />),
-        createData('Satistification of visualizing the result',
+        createData('satisfaction of visualizing the result',
             <Rating
                 currentValue={ratingValues[2]}
                 onChange={setSingleRatingValue(2)} />),
-        createData('Satistification of response time',
+        createData('satisfaction of the response time',
             <Rating
                 currentValue={ratingValues[3]}
                 onChange={setSingleRatingValue(3)} />),
-        createData('Any other genaral comment',
+        createData('Any other general comment',
             <TextArea
                 currentValue={generalComment}
                 onChange={onChangeCommentValue} />),
@@ -104,7 +104,7 @@ export default function Feedback() {
         <div className={classes.root}>
             <h2 className={style.heading}>Leave a feedback</h2>
             <p className={style.subHeading}>
-                We are happy to have your valueble feedback to
+                We are happy to have your valuable  feedback to
                 improve our website better.
         </p>
 

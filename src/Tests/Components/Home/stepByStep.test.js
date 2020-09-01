@@ -16,7 +16,7 @@ import pwImage from '../../../Components/HomeSection/assets/img/Steps/pw.png';
 const mockStore = configureStore();
 
 describe('Testing the StepByStep component', () => {
-    const store = mockStore({/* any required initial state */ });
+    const store = mockStore({/* any required initial state */});
 
     const TestData = {
         HeadTitle: 'MSA',
@@ -26,7 +26,7 @@ describe('Testing the StepByStep component', () => {
         title3: `Enter your variables`,
         title4: `Click enter to results`,
         step1: `First click the menu icon. 
-            Then you can see some menu items in leftside. 
+            Then you can see some menu items in left side. 
             After that click 'PairAlign' to visit Pairwise Alignment.`,
         step2: `There are two inputs.
             You need to enter your two DNA sequences. 
@@ -47,7 +47,7 @@ describe('Testing the StepByStep component', () => {
         title3: `Enter your variables`,
         title4: `Click enter to results`,
         step1: `First click the menu icon. 
-            Then you can see some menu items in leftside. 
+            Then you can see some menu items in left side. 
             After that click 'PairAlign' to visit Pairwise Alignment.`,
         step2: `There are two inputs.
             You need to enter your two DNA sequences. 
