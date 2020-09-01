@@ -52,7 +52,7 @@ export default function FullScreenDialog() {
     <div>
 
       <h1>Lets have a fun!</h1>
-      <p>Lets see your performing of knowledge</p>
+      <p>Lets see your performance and knowledge</p>
 
       {/* <img
         className={classes.imgage}
@@ -70,7 +70,7 @@ export default function FullScreenDialog() {
         <AppBar className={classes.appBar} testid='appBarId'>
           <Toolbar testid='toolbarId'>
             <IconButton edge="start" testid='iconButtonId'
-                color="inherit" onClick={handleClose} aria-label="close" >
+              color="inherit" onClick={handleClose} aria-label="close" >
               <CloseIcon />
             </IconButton>
 
@@ -79,7 +79,7 @@ export default function FullScreenDialog() {
               variant="h6"
               className={classes.title}
               testid='typographyId'>
-                Test your knowledge of alignment
+              Test your knowledge of alignment
             </Typography>
 
             <Button
@@ -87,7 +87,7 @@ export default function FullScreenDialog() {
               color="inherit"
               onClick={handleClose}
               testid='InnerButtonId'
-              >Close</Button>
+            >Close</Button>
 
           </Toolbar>
         </AppBar>

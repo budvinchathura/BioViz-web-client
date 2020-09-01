@@ -59,42 +59,42 @@ export default function TransferList() {
 
   // update the sentences
   const [left, setLeft] = React.useState(
-      ['Compares 2 sequences - either protien, DNA or RNA',
+    ['Compares 2 sequences - either protien, DNA or RNA',
       'Optimal alignment can be obtained with O(n^2)',
       'Comparatively simple',
       'Used with phylogenetic tree analysis',
-      'Used to find out conserved regions between 2 sequences',
-      'Genarally uses gloabl alignment',
+      'Used to find out similar regions between 2 sequences',
+      'Generally uses global  alignment',
     ]);
 
   const [right, setRight] = React.useState(
-      ['Categorized as local and gloable alignment',
-      'Compare more than 2 sequeneces',
-      `Finding optimal alignment is exhustive. 
+    ['Categorized as local and global  alignment',
+      'Compare more than 2 sequences',
+      `Finding optimal alignment is exhaustive. 
       Scales exponentially with more sequences`,
       'Iterative and progressive methods are used',
-      `Used to detect reggions of variability or
-       conservation in family of ganes`,
+      `Used to detect regions of distinct or
+       similar in family of genes`,
     ]);
 
-    const pairwise =
-        ['Compares 2 sequences - either protien, DNA or RNA',
-        'Optimal alignment can be obtained with O(n^2)',
-        'Comparatively simple',
-        'Categorized as local and gloable alignment',
-        'Used to find out conserved regions between 2 sequences',
-        ];
+  const pairwise =
+    ['Compares 2 sequences - either protien, DNA or RNA',
+      'Optimal alignment can be obtained with O(n^2)',
+      'Comparatively simple',
+      'Categorized as local and global  alignment',
+      'Used to find out similar regions between 2 sequences',
+    ];
 
-    const msa =
-        ['Compare more than 2 sequeneces',
-        'Genarally uses gloabl alignment',
-        `Finding optimal alignment is exhustive. 
+  const msa =
+    ['Compare more than 2 sequences',
+      'Genarally uses global  alignment',
+      `Finding optimal alignment is exhaustive. 
         Scales exponentially with more sequences`,
-        'Iterative and progressive methods are used',
-        `Used to detect reggions of variability or 
-        conservation in family of ganes`,
-        'Used with phylogenetic tree analysis',
-        ];
+      'Iterative and progressive methods are used',
+      `Used to detect regions of distinct or 
+        similar in family of genes`,
+      'Used with phylogenetic tree analysis',
+    ];
 
 
   const leftChecked = intersection(checked, left);
@@ -135,9 +135,9 @@ export default function TransferList() {
     setChecked(not(checked, leftChecked));
   };
 
-    /*
-    This function is to change right side selected item move to left
-  */
+  /*
+  This function is to change right side selected item move to left
+*/
 
   const handleCheckedLeft = () => {
     setLeft(left.concat(rightChecked));
@@ -177,11 +177,11 @@ export default function TransferList() {
 
           return (
             <ListItem
-                testid='listItemId'
-                key={value}
-                role="listitem"
-                button
-                onClick={handleToggle(value)}
+              testid='listItemId'
+              key={value}
+              role="listitem"
+              button
+              onClick={handleToggle(value)}
             >
               <ListItemIcon testid='listItemIconId'>
                 <Checkbox testid='checkBox2Id'
@@ -201,7 +201,7 @@ export default function TransferList() {
   );
 
   const instruction = {
-    message: 'Select and move the rows into relavant alignment.',
+    message: 'Select and move the rows into relevant alignment.',
   };
 
   const rightAnswerAlert = {
@@ -222,13 +222,13 @@ export default function TransferList() {
       let a = 0;
       const two = 'Optimal alignment can be obtained with O(n^2)'; let b = 0;
       const three = 'Comparatively simple'; let c = 0;
-      const four ='Categorized as local and gloable alignment'; let d = 0;
-      const five='Used to find out conserved regions between 2 sequences';
+      const four = 'Categorized as local and global  alignment'; let d = 0;
+      const five = 'Used to find out similar regions between 2 sequences';
       let e = 0;
 
       // eslint-disable-next-line
       left.map((item) => {
-        if (item === one ) {
+        if (item === one) {
           a = 1;
         } else if (item === two) {
           b = 1;
@@ -241,24 +241,24 @@ export default function TransferList() {
         }
       });
 
-      if (a===b && a && c===d && a===e) {
+      if (a === b && a && c === d && a === e) {
         return (
-        setAlertcomponent(
+          setAlertcomponent(
 
-        <Alert onClick = {checkResult} {...rightAnswerAlert} />,
-        )
-      );
+            <Alert onClick={checkResult} {...rightAnswerAlert} />,
+          )
+        );
       } else {
         return (
           setAlertcomponent(
-          <Alert onClick = {checkResult} {...wrongAnswerAlert} />,
+            <Alert onClick={checkResult} {...wrongAnswerAlert} />,
           )
         );
       }
     } else {
       return (
         setAlertcomponent(
-        <Alert onClick = {checkResult} {...wrongAnswerAlert} />,
+          <Alert onClick={checkResult} {...wrongAnswerAlert} />,
         )
       );
     }
@@ -267,10 +267,10 @@ export default function TransferList() {
   return (
     <div className={classes.root}>
       <Grid container testid='gridId'
-          spacing={2}
-          justify="center"
-          alignItems="center"
-          className={classes.root}
+        spacing={2}
+        justify="center"
+        alignItems="center"
+        className={classes.root}
       >
         <Grid item testid='gridItemId1'>
           {customList('Pairwise Alignment', left)}</Grid>
@@ -289,14 +289,14 @@ export default function TransferList() {
             </Button>
 
             <Button testid='buttonId2'
-              onClick = {checkResult}
-              >{
-                Alertcomponent?
-                  'Re-submit':
-                    'Submit'}
-                </Button>
+              onClick={checkResult}
+            >{
+                Alertcomponent ?
+                  'Re-submit' :
+                  'Submit'}
+            </Button>
 
-              {Alertcomponent}
+            {Alertcomponent}
 
             <Button testid='buttonId3'
               variant="outlined"
@@ -313,7 +313,7 @@ export default function TransferList() {
         <Snackbar {...instruction} testid='snackbarId' />
         <Grid item testid='gridItemId3'>
           {customList('MSA Alignment', right)}</Grid>
-          <ShowResults />
+        <ShowResults />
       </Grid>
 
     </div>

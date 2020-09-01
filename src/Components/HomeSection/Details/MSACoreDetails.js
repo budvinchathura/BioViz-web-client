@@ -32,7 +32,7 @@ export default function MSACoreDetails() {
         Multiple Sequence Alignment (MSA) is generally the alignment
         of three or more biological sequences (protein or nucleic acid)
         of similar length. From the output, homology can be inferred and
-        the evolutionary relationships between the sequences studied.
+        the evolutionary relationships between the sequences are studied.
         <br />
       </Typography>
 
@@ -52,7 +52,7 @@ export default function MSACoreDetails() {
         <br />
       </Typography>
 
-        <br />
+      <br />
 
       <Typography component={'span'} variant="h6" gutterBottom>
         Progressive Algorithm
