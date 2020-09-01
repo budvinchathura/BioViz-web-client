@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/BioViz-web-client/static/css/main.a3537bcf.chunk.css",
+    "main.js": "/BioViz-web-client/static/js/main.b1a1c32c.chunk.js",
+    "main.js.map": "/BioViz-web-client/static/js/main.b1a1c32c.chunk.js.map",
+    "runtime-main.js": "/BioViz-web-client/static/js/runtime-main.d97b5dd1.js",
+    "runtime-main.js.map": "/BioViz-web-client/static/js/runtime-main.d97b5dd1.js.map",
+    "static/js/2.54799655.chunk.js": "/BioViz-web-client/static/js/2.54799655.chunk.js",
+    "static/js/2.54799655.chunk.js.map": "/BioViz-web-client/static/js/2.54799655.chunk.js.map",
+    "index.html": "/BioViz-web-client/index.html",
+    "precache-manifest.25935c10a101c270e34d62ca319a8751.js": "/BioViz-web-client/precache-manifest.25935c10a101c270e34d62ca319a8751.js",
+    "service-worker.js": "/BioViz-web-client/service-worker.js",
+    "static/css/main.a3537bcf.chunk.css.map": "/BioViz-web-client/static/css/main.a3537bcf.chunk.css.map",
+    "static/js/2.54799655.chunk.js.LICENSE.txt": "/BioViz-web-client/static/js/2.54799655.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/BioViz-web-client/static/media/1.eff3baf8.jpg",
+    "static/media/2.jpg": "/BioViz-web-client/static/media/2.a44f7dee.jpg",
+    "static/media/3.png": "/BioViz-web-client/static/media/3.7d298726.png",
+    "static/media/MSA.png": "/BioViz-web-client/static/media/MSA.f1cd5369.png",
+    "static/media/dna.svg": "/BioViz-web-client/static/media/dna.701c38d5.svg",
+    "static/media/input1.jpg": "/BioViz-web-client/static/media/input1.b26b42c0.jpg",
+    "static/media/input3.jpg": "/BioViz-web-client/static/media/input3.1e3a4e88.jpg",
+    "static/media/input4.jpg": "/BioViz-web-client/static/media/input4.93bb8522.jpg",
+    "static/media/knoldge.jpg": "/BioViz-web-client/static/media/knoldge.78ccc254.jpg",
+    "static/media/pw.png": "/BioViz-web-client/static/media/pw.26d40194.png",
+    "static/media/score2.jpg": "/BioViz-web-client/static/media/score2.201c7b06.jpg",
+    "static/media/select2.jpg": "/BioViz-web-client/static/media/select2.463bf52f.jpg",
+    "static/media/select3.jpg": "/BioViz-web-client/static/media/select3.5ecf8d7e.jpg",
+    "static/media/variable1.jpg": "/BioViz-web-client/static/media/variable1.561b0ec6.jpg",
+    "static/media/variable4.png": "/BioViz-web-client/static/media/variable4.fccd97a6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d97b5dd1.js",
+    "static/js/2.54799655.chunk.js",
+    "static/css/main.a3537bcf.chunk.css",
+    "static/js/main.b1a1c32c.chunk.js"
+  ]
+}
