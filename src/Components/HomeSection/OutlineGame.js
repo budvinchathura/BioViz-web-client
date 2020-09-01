@@ -48,35 +48,35 @@ export default function RecipeReviewCard() {
 
   return (
 
-      <div className={classes.position}>
+    <div className={classes.position}>
 
-        <Card className={classes.root}>
-            <CardHeader
-                title="Grab the knoladge about basics from scratch"
-                subheader="Score your knowledge"
-            />
-            <CardMedia
-                className={classes.media}
-                image={image}
-                title="Paella dish"
-            />
-            <DialogScreen />
-            <CardContent>
-                <Typography
-                    component={'span'}
-                    variant="body2"
-                    color="textSecondary"
-                    >
-                    This is a simple game which only look out your basic and
-                    fundermental knowledge about the
-                    two aignment of Pairwise and MSA.
-                    You just need to re-order the items according to
-                    the relavant section.
+      <Card className={classes.root}>
+        <CardHeader
+          title="Grab the knowledge about basics from scratch"
+          subheader="Score your knowledge"
+        />
+        <CardMedia
+          className={classes.media}
+          image={image}
+          title="Paella dish"
+        />
+        <DialogScreen />
+        <CardContent>
+          <Typography
+            component={'span'}
+            variant="body2"
+            color="textSecondary"
+          >
+            This is a simple game which only look out your basic and
+            fundamental knowledge about the
+            two aignment of Pairwise and MSA.
+            You just need to re-order the items according to
+            the relevant section.
 
                 </Typography>
-            </CardContent>
+        </CardContent>
 
-        </Card>
+      </Card>
     </div>
 
   );

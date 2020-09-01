@@ -44,45 +44,45 @@ export default function SimpleGrow() {
     <div className={classes.root}>
       <FormControlLabel
         control={<Switch
-                    testid='switchId'
-                    checked={checked}
-                    // onChange={handleChange}
-                    onClick={handleChange}
-                />}
+          testid='switchId'
+          checked={checked}
+          // onChange={handleChange}
+          onClick={handleChange}
+        />}
         label="Show Solution"
       />
       <div className={classes.container}>
         <Grow in={checked}>
           <Paper elevation={4} className={classes.paper}>
             <div className={classes.svg}>
-                <Typography component={'span'} variant="subtitle2"
-                    gutterBottom testid='typographyHeaderId'>
-                    Pairwise Alignment
+              <Typography component={'span'} variant="subtitle2"
+                gutterBottom testid='typographyHeaderId'>
+                Pairwise Alignment
                     <br />
-                    <Divider />
-                </Typography>
+                <Divider />
+              </Typography>
 
-                <Typography variant="body2" display="block" gutterBottom>
+              <Typography variant="body2" display="block" gutterBottom>
                 1. Compares 2 sequences - either protien, DNA or RNA
                 </Typography>
-                <Typography variant="body2" display="block" gutterBottom>
+              <Typography variant="body2" display="block" gutterBottom>
                 2. Optimal alignment can be obtained with O(n^2)
                 </Typography>
-                <Typography variant="body2" display="block" gutterBottom>
+              <Typography variant="body2" display="block" gutterBottom>
                 3. Comparatively simple
                 </Typography>
-                <Typography variant="body2" display="block" gutterBottom>
-                4. Categorized as local and gloable alignment
+              <Typography variant="body2" display="block" gutterBottom>
+                4. Categorized as local and global  alignment
                 </Typography>
-                <Typography variant="body2" display="block" gutterBottom>
-                5. Used to find out conserved regions between 2 sequences
+              <Typography variant="body2" display="block" gutterBottom>
+                5. Used to find out similar regions between 2 sequences
                 </Typography>
 
             </div>
           </Paper>
         </Grow>
 
-    {/* Conditionally applies the timeout prop to change the entry speed. */}
+        {/* Conditionally applies the timeout prop to change the entry speed.*/}
         <Grow
           in={checked}
           style={{transformOrigin: '0 0 0'}}
@@ -90,32 +90,32 @@ export default function SimpleGrow() {
         >
           <Paper elevation={4} className={classes.paper}>
             <div className={classes.svg}>
-                    <Typography component={'span'} variant="subtitle2"
-                        gutterBottom testid='typographyHeaderId'>
-                        MSA Alignment
+              <Typography component={'span'} variant="subtitle2"
+                gutterBottom testid='typographyHeaderId'>
+                MSA Alignment
                         <br />
-                        <Divider />
-                    </Typography>
+                <Divider />
+              </Typography>
 
-                    <Typography variant="body2" display="block" gutterBottom>
-                    1. Compare more than 2 sequeneces
+              <Typography variant="body2" display="block" gutterBottom>
+                1. Compare more than 2 sequences
                     </Typography>
-                    <Typography variant="body2" display="block" gutterBottom>
-                    2. Genarally uses gloabl alignment
+              <Typography variant="body2" display="block" gutterBottom>
+                2. Genarally uses global alignment
                     </Typography>
-                    <Typography variant="body2" display="block" gutterBottom>
-                    3. Finding optimal alignment is exhustive.
-                    Scales exponentially with more sequences
+              <Typography variant="body2" display="block" gutterBottom>
+                3. Finding optimal alignment is exhaustive.
+                Scales exponentially with more sequences
                     </Typography>
-                    <Typography variant="body2" display="block" gutterBottom>
-                    4. Iterative and progressive methods are used
+              <Typography variant="body2" display="block" gutterBottom>
+                4. Iterative and progressive methods are used
                     </Typography>
-                    <Typography variant="body2" display="block" gutterBottom>
-                    5. Used to detect reggions of variability or
-                    conservation in family of ganes
+              <Typography variant="body2" display="block" gutterBottom>
+                5. Used to detect regions of distinct or
+                similar in family of genes
                     </Typography>
-                    <Typography variant="body2" display="block" gutterBottom>
-                    6. Used with phylogenetic tree analysis
+              <Typography variant="body2" display="block" gutterBottom>
+                6. Used with phylogenetic tree analysis
                     </Typography>
 
 

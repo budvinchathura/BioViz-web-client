@@ -45,10 +45,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'block center',
         width: '100%',
         borderRadius: 20,
-      },
-      details: {
-          marginTop: 50,
-      },
+    },
+    details: {
+        marginTop: 50,
+    },
 }),
 );
 
@@ -83,7 +83,7 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
         setActiveStep(0);
     };
 
-    const onMove = () =>{
+    const onMove = () => {
         dispatch(setDrawerOpen(!drawerOpenStatus));
     };
 
@@ -125,29 +125,29 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
                             <div className={classes.actionsContainer}>
                                 <div>
                                     {
-                                    index===0?
-                                    <img
-                                        className={style.img}
-                                        alt=''
-                                        src={image1}
-                                    /> :
-                                        index === 1?
-                                        <img
-                                        className={style.img}
-                                        alt=''
-                                        src={image2}
-                                    />:
-                                        index ===2?
-                                        <img
-                                        className={style.img}
-                                        alt=''
-                                        src={image3}
-                                    />:
-                                    <img
-                                        className={style.img}
-                                        alt=''
-                                        src={image4}
-                                    />
+                                        index === 0 ?
+                                            <img
+                                                className={style.img}
+                                                alt=''
+                                                src={image1}
+                                            /> :
+                                            index === 1 ?
+                                                <img
+                                                    className={style.img}
+                                                    alt=''
+                                                    src={image2}
+                                                /> :
+                                                index === 2 ?
+                                                    <img
+                                                        className={style.img}
+                                                        alt=''
+                                                        src={image3}
+                                                    /> :
+                                                    <img
+                                                        className={style.img}
+                                                        alt=''
+                                                        src={image4}
+                                                    />
 
 
                                     }
@@ -162,7 +162,7 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
                                     </Typography>
 
                                     <Button testid='backButtonId'
-                                        id = 'BackButtonId'
+                                        id='BackButtonId'
                                         disabled={activeStep === 0}
                                         onClick={handleBack}
                                         className={classes.button}
@@ -170,14 +170,14 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
                                         Back
                                     </Button>
                                     <Button testid='nextButtonId'
-                                        id = 'NextButtonId'
+                                        id='NextButtonId'
                                         variant="contained"
                                         color="primary"
                                         onClick={handleNext}
                                         className={classes.button}
                                     >
                                         {activeStep === steps.length - 1 ?
-                                         'Finish' : 'Next'}
+                                            'Finish' : 'Next'}
                                     </Button>
 
                                 </div>
@@ -191,10 +191,10 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
                 <Paper square elevation={0} className={classes.resetContainer}
                     testid='paperId'>
                     <Typography component={'span'} testid='finishTypographyId'>
-                        All steps completed - you&apos;re finished
+                        All steps completed - you&apos;re prepared
                     </Typography>
                     <Button onClick={handleReset} className={classes.button}
-                        id = 'ResetButtonId'
+                        id='ResetButtonId'
                         testid='resetButtonId'>
                         Reset
                     </Button>
@@ -203,14 +203,14 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
                         variant="contained"
                         color="primary"
                         onClick={onMove}
-                        >
-                    {
-                        `${HeadTitle}` === 'Pairwise' ?
-                            'Go To Pairwise Alignment' :
-                        `${HeadTitle}` === 'MSA' ?
-                            'Go To MSA Alignment':
-                            'Go To Game Alignment'
-                    }
+                    >
+                        {
+                            `${HeadTitle}` === 'Pairwise' ?
+                                'Go To Pairwise Alignment' :
+                                `${HeadTitle}` === 'MSA' ?
+                                    'Go To MSA Alignment' :
+                                    'Go To Game Alignment'
+                        }
                     </Button>
                 </Paper>
 
@@ -220,11 +220,11 @@ export default function VerticalLinearStepper({HeadTitle, image1, image2, image3
 
                 {
                     `${HeadTitle}` === 'Pairwise' ?
-                        <PairwaiseDetails testid = 'testPWDetails' /> :
-                     `${HeadTitle}` === 'MSA' ?
-                        <MSADetails testid = 'testPWDetails' /> :
-                        // <DialogScreen />
-                        ''
+                        <PairwaiseDetails testid='testPWDetails' /> :
+                        `${HeadTitle}` === 'MSA' ?
+                            <MSADetails testid='testPWDetails' /> :
+                            // <DialogScreen />
+                            ''
                 }
             </div>
         </div>
@@ -244,4 +244,4 @@ VerticalLinearStepper.propTypes = {
     step2: PropTypes.string,
     step3: PropTypes.string,
     step4: PropTypes.string,
-  };
+};

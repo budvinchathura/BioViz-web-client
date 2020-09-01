@@ -10,12 +10,12 @@ import {findByAttr} from '../../helper';
 // page
 import Feedback from '../../../Components/HomeSection/Feedback';
 import Alert from '../../../Components/HomeSection/Alert';
-import TextArea from '../../../Components/HomeSection/TextArea';
+// import TextArea from '../../../Components/HomeSection/TextArea';
 
 const mockStore = configureStore();
 
 describe('Testing the Steps component', () => {
-    const store = mockStore({/* any required initial state */ });
+    const store = mockStore({/* any required initial state */});
     let wrapper;
 
     beforeEach(() => {
@@ -44,8 +44,9 @@ describe('Testing the Steps component', () => {
 
         const heading = wrapper.find('div p');
         expect(heading.text())
-        .toBe(
-`We are happy to have your valueble feedback to improve our website better.`,
+            .toBe(
+                // eslint-disable-next-line max-len
+                `We are happy to have your valuable  feedback to improve our website better.`,
             );
     });
 
